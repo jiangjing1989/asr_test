@@ -1,0 +1,29 @@
+batch: 512
+epoch: 30
+model_dir: '/home/jiangjing/project/my/output_model'
+model_save_num: 10
+
+dataloader:
+  lexicon_p: '/home/jiangjing/project/my/data/lexicon'
+  train_p: '/home/jiangjing/project/my/data/train_egs'
+  eval_p: '/home/jiangjing/project/my/data/test_egs'
+  batch: 512
+  ngram: 3
+
+model:
+  vocabulary_size: 401
+  embed_dim: 128
+  embed_dropout: 0.0
+  num_lstms: 1
+  lstm_units: 128
+
+classifier:
+  dense_dim: 256
+  vocabulary_size: 401
+
+optimizer:
+  learning_rate: 0.0001
+  beta_1: 0.9
+  beta_2: 0.98
+  epsilon: 0.000001
+
